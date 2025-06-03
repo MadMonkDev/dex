@@ -1,0 +1,5 @@
+Usage : dex [options] <directory name>
+
+Options : 
+  -h / --help ===> show man page
+  -d          ===> directory
