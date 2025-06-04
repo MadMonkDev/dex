@@ -1,8 +1,29 @@
-Usage : dex [options] <directory name>
+dex - Directory Explorer CLI Tool
+=================================
 
-Options : 
-  -h / --help           ===> show man page
-  -p / --path           ===> takes path for the function
-  -d / --show_dotfiles  ===> shows dotfiles
-  --sort=alpha/size     ===> sort alphabetically or increasing size
-  --ignore <files/dirs> ===> ignore the given files
+Usage:
+  dex [options] <directory>
+
+If no directory is specified, current directory is used.
+
+Options:
+  -h, --help             Show this manual.
+  -d, --show-dotfiles    Include hidden files and directories (dotfiles) in the tree.
+  --sort=alpha           Sort directory contents alphabetically (default).
+  --sort=size            Sort directories by total size (recursively).
+  --ignore <name> ...    Ignore specific files/directories. Accepts multiple names.
+  -p, --path <dir>       Explicitly specify the directory path to explore.
+
+Examples:
+  dex                             Show tree of current directory.
+  dex -d                          Show tree including dotfiles.
+  dex --sort=size                 Sort directories by size.
+  dex --ignore build .git        Ignore 'build' and '.git' folders.
+  dex --path ~/Downloads         Explore a given directory.
+
+Description:
+  dex recursively displays a tree-like structure of the specified directory.
+  It supports filtering, sorting, and dotfile visibility options.
+
+Documentation:
+  https://github.com/MadMonkDev/dex
