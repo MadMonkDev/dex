@@ -2,6 +2,7 @@ Usage : dex [options] <directory name>
 
 Options : 
   -h / --help           ===> show man page
+  -p / --path           ===> takes path for the function
   -d / --show_dotfiles  ===> shows dotfiles
   --sort=alpha/size     ===> sort alphabetically or increasing size
   --ignore <files/dirs> ===> ignore the given files

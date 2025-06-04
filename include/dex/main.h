@@ -1,6 +1,8 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+#define VERSION_DEX "0.0.10a"
+
 typedef enum {
     SORT_ALPHA,
     SORT_SIZE
