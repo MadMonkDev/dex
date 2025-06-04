@@ -84,29 +84,6 @@ dex --path ~/projects
 
 ---
 
-## 📁 Project Layout
-
-```
-.
-├── CMakeLists.txt
-├── cmake_uninstall.cmake.in
-├── include/
-│   └── dex/
-│       ├── explorer.h
-│       ├── main.h
-│       └── manual.h
-├── src/
-│   ├── explorer.c
-│   ├── main.c
-│   └── manual.c
-├── tree.c
-├── Documentation/
-│   └── manual.txt
-├── README.md
-└── LICENSE
-```
-
----
 
 ## 📝 Description
 
@@ -144,5 +121,3 @@ Pull requests and suggestions are welcome!
 - Full **usage section** with **flag breakdown**
 - Minimalist tone, suitable for open-source audiences
 - Ready to drop into GitHub with no edits needed except username
-
-Would you like a matching `man` page (`dex.1`) or a `Makefile` to wrap the CMake and Doxygen workflow?
