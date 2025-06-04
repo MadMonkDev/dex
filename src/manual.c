@@ -1,16 +1,17 @@
+#include <stdio.h>
+#include "dex/manual.h"
 
-#include <dex/manual.h>
-
-void manual(void) {
-    FILE *fp = fopen(MANUAL_PATH, "r");
-    if (!fp) {
-        perror("Could not open manual");
+void show_manual(const char *path) {
+    FILE *file = fopen(path, "r");
+    if (!file) {
+        perror("Failed to open manual file");
         return;
     }
 
-    int ch;
-    while ((ch = fgetc(fp)) != EOF) {
+    char ch;
+    while ((ch = fgetc(file)) != EOF) {
         putchar(ch);
     }
-    fclose(fp);
+
+    fclose(file);
 }

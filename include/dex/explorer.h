@@ -1,26 +1,15 @@
-
-// include/dex/explorer.h
 #ifndef EXPLORER_H
 #define EXPLORER_H
 
-void explorer(void);
+#include "main.h"
+
+typedef struct {
+    int files;
+    int dirs;
+} counter_t;
+
+void walk_directory(const char* path, const char* prefix, counter_t* counter,
+                    int show_dotfiles, sort_mode_t sort_mode,
+                    char **ignore_list, int ignore_count);
 
 #endif
-
-/* All Header files */
-#include <stdio.h>
-#include <string.h>
-#include <dirent.h>
-
-typedef struct size_count {
-  size_t dir;
-  size_t files;
-} count_t ;
-
-typedef struct entry_dir {
-  char *dir_name;
-  int is_dir;
-  struct entry_dir *next;
-} entry_t ;
-
-

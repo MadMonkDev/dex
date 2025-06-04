@@ -1,8 +1,6 @@
+#ifndef MANUAL_H
+#define MANUAL_H
 
-/* ALL HEADERS */
+void show_manual(const char *path);
 
-#include <stdio.h>
-#include <stdlib.h>
-
-#define MANUAL_PATH "../Documentation/manual.txt"
-
+#endif
