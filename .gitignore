@@ -26,6 +26,3 @@ compile_commands.json
 .cache/
 .clangd/
 .clangd
-
-# extra files
-compile_commands.json

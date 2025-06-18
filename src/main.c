@@ -56,7 +56,7 @@ void parse_arguments(int argc, char *argv[], const char **path,
     for (int i = 1; i < argc; i++) {
         
         if ((strcmp(argv[i], "-h") == 0) || (strcmp(argv[i], "--help") == 0)) {
-            show_manual("../Documentation/manual.txt");
+            show_manual();
             exit(0);
         }
         

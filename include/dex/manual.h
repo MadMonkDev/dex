@@ -1,6 +1,6 @@
 #ifndef MANUAL_H
 #define MANUAL_H
 
-void show_manual(const char *path);
+void show_manual();
 
 #endif
